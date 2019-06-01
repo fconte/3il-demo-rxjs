@@ -1,0 +1,5 @@
+<div class="button" (click)="switchChrono()" [ngClass]="{'red': chronoIsDisplayed}">
+  <span *ngIf="!chronoIsDisplayed">Démarrer le chrono</span>
+  <span *ngIf="chronoIsDisplayed">Arrêter le chrono</span>
+</div>
+<app-chrono *ngIf="chronoIsDisplayed"></app-chrono>
